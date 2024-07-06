@@ -1,0 +1,114 @@
+/* --------------------------------- */
+/* Styles pour la version responsive */
+/* --------------------------------- */
+
+@media screen and (max-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  /* Affichage des données de l'utilisateur */
+  .info-login {
+    margin: 50px auto;
+    text-align: center;
+    font-size: 5vw;
+  }
+
+  /* Styles pour le menu en version responsive */
+  /* ----------------------------------------- */
+  nav {
+    margin-top: 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    width: 100%; /* Utilisez la largeur totale de l'écran pour chaque élément du menu */
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    display: block;
+    text-decoration: none;
+    color: #d7c378;
+    background-color: #1b1b1b; /* Fond du menu */
+    padding: 15px;
+    text-align: center;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transition pour un effet de survol en douceur */
+    border-radius: 25px;
+    font-size: 25px;
+  }
+
+  nav a:hover {
+    color: #1b1b1b; /* Changement de couleur au survol */
+    background-color: #d7c378; /* Changement de fond au survol */
+  }
+
+  /* Ajuster le conteneur <main> pour les écrans plus petits */
+  /* ------------------------------------------------------- */
+  main {
+    display: flex;
+    flex-direction: column; /* Empiler les éléments verticalement */
+    justify-content: space-around; /* Répartir les éléments de manière égale sur l'axe principal */
+    width: 90%;
+    margin: 50px auto; /* Centrer le conteneur sur la page */
+  }
+
+  form {
+    width: 90%;
+  }
+
+  /* Conteneur du <main> conteant les catégories utilisant flexbox */
+  /* ------------------------------------------------------------- */
+  .category-site {
+    display: flex;
+    justify-content: space-around; /* Répartir les éléments de manière égale sur l'axe principal */
+    width: 90%;
+    margin: auto; /* Centrer le conteneur sur la page */
+    flex-wrap: wrap;
+  }
+
+  /* Styles pour les liens donnant l'impression d'être des boutons */
+  /* ------------------------------------------------------------- */
+  .link-category {
+    display: flex;
+    width: 90%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 25px;
+    margin: 50px auto;
+    background-color: #1b1b1b;
+    font-size: 7vw;
+    color: #d7c378;
+    padding: 15px;
+  }
+
+  /* Lien en bas de page */
+  /* ------------------- */
+  .paragraph-link {
+    display: flex;
+    justify-content: center;
+  }
+  
+/* Propriétés du footer */
+/* -------------------- */
+  footer {
+    display: flex;
+    margin: 50px auto;
+    width: 90%;
+    height: 40vh;
+    justify-content: center; /* Répartir les éléments de manière égale sur l'axe principal */
+  }
+}
